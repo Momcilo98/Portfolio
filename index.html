@@ -131,6 +131,9 @@
 							<li>
 								<p>E-mail notifications</p>
 							</li>
+							<li>
+								<p>Automatised Table Reservation</p>
+							</li>
 						</ul>
 					</div>
 					<div class="col-auto">
@@ -140,9 +143,6 @@
 							</li>
 							<li>
 								<p>Unique url for booking editing</p>
-							</li>
-							<li>
-								<p>Automatised Table Reservation</p>
 							</li>
 						</ul>
 					</div>
@@ -343,7 +343,8 @@
 						</label>
 						<!-- Project picture card back -->
 						<div class="col-auto d-flex mt-4 mb-2 align-items-center">
-							<a class="link" href="https://ehls.rs/"><i class="fa fa-chrome me-2 mb-0" aria-hidden="true"></i><span class="me-3 mb-0">Open Demo</span></a>
+							<a class="link" href="https://ehls.rs/"><i class="fa fa-chrome me-2 mb-0"
+									aria-hidden="true"></i><span class="me-3 mb-0">Open Demo</span></a>
 						</div>
 						<div class="mb-3">
 							<span class="shadow-sm badge bg-light text-dark">PHP</span>
@@ -363,7 +364,8 @@
 
 							</p>
 							<p>
-								About the project, taken from it's <a href="https://ehls.rs/o-nama#o-nama">About page</a>:
+								About the project, taken from it's <a href="https://ehls.rs/o-nama#o-nama">About
+									page</a>:
 							</p>
 							<p>
 								<em>We are a charitable non-profit association that strives to help the most vulnerable
@@ -389,7 +391,7 @@
 		</div>
 
 		<div id="reservation-system" class="project-block">
-			<h4>Portfolio Website</h4>
+			<h4>@pc_setup_ideas Instagram Bot</h4>
 			<div class="mt-4 mb-5">
 
 				<div class="row">
@@ -397,6 +399,98 @@
 						<!-- Project picture card -->
 						<input type="checkbox" id="card-5" />
 						<label class="card-container" for="card-5">
+							<div class="card-flip">
+								<div class="card front m-0">
+									<img class="proj-img img-fluid shadow" src="assets/images/proj-7-front.png">
+								</div>
+								<div class="card back m-0">
+									<img class="proj-img img-fluid shadow" src="assets/images/proj-7-back.png">
+								</div>
+							</div>
+						</label>
+						<!-- Project picture card back -->
+						<div class="col-auto d-flex mt-4 mb-2 align-items-center">
+							<a class="link" href="https://github.com/Raptr3x/instagram_bot"><i
+									class="fa fa-github me-2 mb-0" aria-hidden="true"></i><span class="me-3 mb-0">View
+									Source Code</span></a>
+							<!-- <a class="link disabled"><i class="fa fa-chrome me-2 mb-0" aria-hidden="true"></i><span class="me-3 mb-0">Open Demo</span></a> -->
+						</div>
+						<div class="mb-3">
+							<span class="shadow-sm badge bg-light text-dark">Python</span>
+							<span class="shadow-sm badge bg-light text-dark">SQLite</span>
+							<span class="shadow-sm badge bg-light text-dark">Optical Word Recognition</span>
+							<span class="shadow-sm badge bg-light text-dark">Facial Recognition</span>
+							<span class="shadow-sm badge bg-light text-dark">Image Fingerprinting</span>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex justify-content-center">
+						<div>
+							<h4>About Project</h4>
+							<p>
+								The project is an Instagram bot, <a
+									href="https://www.instagram.com/pc_setup_ideas/">@pc_setup_ideas</a>, dedicated to
+								sharing PC setup ideas.
+								In just one year, it has amassed an impressive following of over 32,000 users while
+								operating on a Raspberry Pi, demonstrating its efficiency and scalability. The follower
+								count has since fallen due to inactivity.
+							</p>
+							<p>The bot's workflow is structured for content quality and user engagement. It begins by
+								monitoring the image count and, if it falls below a set threshold, it gathers new images
+								from selected instagram pages, moves those new images to a quarantine directory. Here,
+								it rigorously checks for duplicates, human faces, and red flag keywords to filter out
+								advertisements. Images that fail these checks are promptly deleted, while the rest are
+								hashed for future duplicate checks and stored in the "future_images" directory.
+							</p>
+							<p>
+								Once this directory is prepared, the bot randomly selects an image and retrieves a
+								random description and 25 relevant hashtags from its database. It then posts this
+								content to Instagram using Selenium script (at the time of making, Instagram didn't have
+								an API to post content) and logs bot data before waiting for a specified duration to
+								repeat
+								the cycle. This systematic approach ensures consistent, high-quality content delivery,
+								contributing to its impressive follower growth.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<h4>functionality</h4>
+					<div class="col-4 col-md-4 col-lg-3 col-xl-3">
+						<ul>
+							<li>
+								<p>Taking advantage of Selenium to post images</p>
+							</li>
+							<li>
+								<p>OCR used for filtering advertisements</p>
+							</li>
+							<li>
+								Hosted on my Raspberry Pi 3B+
+							</li>
+						</ul>
+					</div>
+					<div class="col-auto">
+						<ul>
+							<li>
+								<p>Facial recognition used to filter out images with human faces</p>
+							</li>
+							<li>
+								<p>Image hashing (or image fingerprinting) used to filter out already posted images</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="reservation-system" class="project-block">
+			<h4>Portfolio Website</h4>
+			<div class="mt-4 mb-5">
+
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+						<!-- Project picture card -->
+						<input type="checkbox" id="card-6" />
+						<label class="card-container" for="card-6">
 							<div class="card-flip">
 								<div class="card front m-0">
 									<img class="proj-img img-fluid shadow" src="assets/images/proj-5-front.png">
